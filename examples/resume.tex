@@ -1,5 +1,6 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
+% !TeX document-id = {14809d80-472f-4602-8586-7920f75b1d52}
+%!TEX TS-program = LuaLatex
+% !TeX encoding = UTF-8
 % Awesome CV LaTeX Template for CV/Resume
 %
 % This template has been downloaded from:
@@ -18,10 +19,10 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=.8cm, footskip=.5cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -46,8 +47,9 @@
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-
-
+\renewcommand{\acvHeaderAfterSocialSkip}{1mm}
+\renewcommand{\acvHeaderAfterQuoteSkip}{1mm}
+\renewcommand{\acvSectionTopSkip}{.5mm}
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
@@ -88,7 +90,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {}
+  {Scott Simontis <yo@scottsimontis.io>}
   {\thepage}
 
 
