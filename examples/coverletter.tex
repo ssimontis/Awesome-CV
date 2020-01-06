@@ -1,5 +1,5 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
+%!TEX TS-program = LuaLatex
+%!TEX encoding = UTF-8
 % Awesome CV LaTeX Template for Cover Letter
 %
 % This template has been downloaded from:
@@ -18,7 +18,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -53,17 +53,17 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 \photo[circle,noedge,left]{./examples/profile}
-\name{Claud D.}{Park}
-\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
-\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+\name{Scott}{Simontis}
+\position{Full-Stack Engineer{\enskip\cdotp\enskip}DevOps Acolyte}
+\address{Atlanta, GA}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+\mobile{(470) 279-1230}
+\email{yo@scottsimontis.io}
+\homepage{dev.to/ssimontis}
+\github{ssimontis}
+\linkedin{scottsimontis}
 % \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
+\stackoverflow{879429}{ssimontis}
 % \twitter{@twit}
 % \skype{skype-id}
 % \reddit{reddit-id}
@@ -73,7 +73,7 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
 
-\quote{``Be the change that you want to see in the world."}
+\quote{"Move fast and break things...with stable infrastructure."}
 
 
 %-------------------------------------------------------------------------------
@@ -82,18 +82,18 @@
 %-------------------------------------------------------------------------------
 % The company being applied to
 \recipient
-  {Company Recruitment Team}
-  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+  {Twitter Recruitment Team}
+  {1355 Market St. Ste, 900\\San Francisco, CA 94103}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Job Application for Software Engineer}
+\lettertitle{Software Engineer - Systems}
 % How the letter is opened
-\letteropening{Dear Mr./Ms./Dr. LastName,}
+\letteropening{Dear Hiring Committee,}
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
-\letterenclosure[Attached]{Curriculum Vitae}
+%\letterenclosure[Attached]{Curriculum Vitae}
 
 
 %-------------------------------------------------------------------------------
@@ -101,13 +101,13 @@
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[R]
+\makecvheader
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Cover Letter}
+  {Scott Simontis~~~·~~~Cover Letter}
   {}
 
 % Print the title with above letter informations
@@ -119,13 +119,13 @@
 \begin{cvletter}
 
 \lettersection{About Me}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+I've spent the last 7 years making the .NET Platform as diverse of an experience as it could possibly be...I started out working with embedded systems in the traffic industry, did plenty of work with CMS systems, founded a startup that didn't quite make it off the ground, and was lucky enough to have some brilliant mentors. Lately, I've been focusing on DevOps and Linux Systems Administration to expand my horizons. I've been learning Elixir and Ruby and trying to contribute to some open-source projects.
 
-\lettersection{Why Google?}
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+\lettersection{Why Twitter?}
+I find it a little entertaining that within a week of me finally deciding to make a Twitter account, I get to go from begging our President to send Navy ships to Australia to aid evacuations to applying for a job. I was told that you should never be the smartest person at your workplace, and at Twitter, I know there will be many engineers who are smarter than me, and I can find a mentor to grow and exchange ideas with an incredibly diverse team. I want to be challenged, and I can see the Platform Engineering team being the perfect place for my newfound interest in DevOps to blossom.
 
 \lettersection{Why Me?}
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+It does seem a little strange, doesn't it? Twitter's tools of choice are Java, C/C++, and Scala; I have moderate experience with one of those languages. But software languages can be picked up quickly, especially when you are being challenged. By comparing what I learn to all of the concepts I am already familiar with, I can make connections quickly and start delivering results immediately. I hope my background will let me share different perspectives with my team, and that we can all grow together through our collective knowledge and lives.
 
 \end{cvletter}
 
