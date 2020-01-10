@@ -704,7 +704,7 @@
 % Define a title of the cover letter
 % Usage: \makelettertitle
 \newcommand*{\makelettertitle}{%
-  \vspace{8.4mm}
+  \vspace{4.4mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
