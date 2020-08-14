@@ -48,6 +48,7 @@
 %-------------------------------------------------------------------------------
 % Needed to make fixed length table
 \RequirePackage{array}
+\RequirePackage{tabulary}
 % Needed to handle list environment
 \RequirePackage{enumitem}
 % Needed to handle text alignment
@@ -403,9 +404,7 @@
 %                Commands for utilities
 %-------------------------------------------------------------------------------
 % Use to align an element of tabular table
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
 
 % Use to draw horizontal line with specific thickness
 \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
@@ -654,18 +653,20 @@
 \newenvironment{cvskills}{%
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2.0mm}
-  \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+    \begin{tabulary}{\textwidth}{RC}
+
 }{%
-    \end{tabular*}
-  \end{center}
+	\end{tabulary}
+
+
 }
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
 \newcommand*{\cvskill}[2]{%
 	\skilltypestyle{#1} & \skillsetstyle{#2} \\
+
 }
 
 % Define an environment for cvitems(for cventry)

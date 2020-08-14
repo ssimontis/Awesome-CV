@@ -161,9 +161,9 @@
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
 % Set the FontAwesome font to be up-to-date.
-%\newfontfamily\FA[Path=\@fontdir]{FontAwesome}
+\setfontfamily\FA[Path=\@fontdir]{FontAwesome}
 % Set font for header (default is Roboto)
-\newfontfamily\headerfont[
+\setfontfamily\headerfont[
   Path=\@fontdir,
   UprightFont=*-Regular,
   ItalicFont=*-Italic,
@@ -657,7 +657,7 @@
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.75}}}
 }{%
     \end{tabular*}
   \end{center}
